@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<parameters>
+<parameter name="DEREPLICATOR_TASK">None</parameter>
+<parameter name="GNPS_TASK">1fd0600059fc4d9589a1a93f629fe025</parameter>
+<parameter name="MS2LDA_TASK">None</parameter>
+<parameter name="NAP_TASK">None</parameter>
+<parameter name="VARQUEST_TASK">None</parameter>
+<parameter name="desc">Orbitrap_2019_molnetenhancer</parameter>
+<parameter name="email">milou.arts@nioz.nl</parameter>
+<parameter name="task">9a4af2f75c754d628a181a17c1b0b2e0</parameter>
+<parameter name="user">MilouArts</parameter>
+<parameter name="uuid">1E49A45A-34A7-0001-3A40-15F41CC018CB</parameter>
+<parameter name="workflow">MOLNETENHANCER</parameter>
+<parameter name="workflow_version">release_22</parameter>
+</parameters>

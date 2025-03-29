@@ -1,0 +1,3 @@
+﻿ID::ID!!I,Area::Area!!R,Circularity::Circularity!!R,Diameter::Diameter!!R,EllipseMajor::Ellipse Major!!R,EllipseMinor::Ellipse Minor!!R,Perimeter::Perimeter!!R,Radius::Radius!!R,FeretMax::Feret Maximum!!R,FeretMin::Feret Minimum!!R
+,"µm²",,"µm","µm","µm","µm","µm","µm","µm"
+2,0.37185941043084,0.70573006699684,0.68808873442489,0.46485142965767,0.25806117472888,2.4892486067202,0.34404436721245,0.97500271931587,0.54211519890969

@@ -1,0 +1,18 @@
+Sample_Name,Analysis_Type,Year,Month,Day,Time,Time_Point,Exp_Sample_Type,Treatment_ratio,Replicate,Bottle_Nr
+CU18_522,Cell Size,2018,11,28,21;00,21,Experiment,Dictyota,1,1
+CU18_523,Cell Size,2018,11,28,21;00,21,Experiment,Dictyota,2,2
+CU18_524,Cell Size,2018,11,28,21;00,21,Experiment,Dictyota,3,3
+CU18_525,Cell Size,2018,11,28,21;00,21,Experiment,Coral_Dictyota,1,4
+CU18_526,Cell Size,2018,11,28,21;00,21,Experiment,Coral_Dictyota,2,5
+CU18_527,Cell Size,2018,11,28,21;00,21,Experiment,Coral_Dictyota,3,6
+CU18_528,Cell Size,2018,11,28,21;00,21,Experiment,Coral,1,7
+CU18_529,Cell Size,2018,11,28,21;00,21,Experiment,Coral,2,8
+CU18_530,Cell Size,2018,11,28,21;00,21,Experiment,Coral,3,9
+CU18_531,Cell Size,2018,11,28,21;00,21,Experiment,Coral_Turf,1,10
+CU18_532,Cell Size,2018,11,28,21;00,21,Experiment,Coral_Turf,2,11
+CU18_533,Cell Size,2018,11,28,21;00,21,Experiment,Coral_Turf,3,12
+CU18_535,Cell Size,2018,11,28,21;00,21,Experiment,Turf,2,14
+CU18_536,Cell Size,2018,11,28,21;00,21,Experiment,Turf,3,15
+CU18_537,Cell Size,2018,11,28,21;00,21,Control,Control,1,16
+CU18_538,Cell Size,2018,11,28,21;00,21,Control,Control,2,17
+CU18_539,Cell Size,2018,11,28,21;00,21,Control,Control,3,18

@@ -1,0 +1,460 @@
+No exudates, without control group
+ 
+Welch Two Sample t-test
+two.sided
+t =
+0.365277529637959
+df =
+8.70299178890462
+pvalue =
+0.72362347315715
+conf.int %
+152527687.608267
+conf.int =
+-110307531.380405
+estimate mean of x =
+2075226434.52868
+estimate mean of y =
+2054116356.41475
+ 
+ 
+all exudates split over different groups
+Control
+One Sample t-test
+two.sided
+t =
+11.4415345827252
+df =
+2
+pvalue =
+0.0075524811532346
+conf.int %
+1946280017.98897
+conf.int =
+1390853251.71396
+estimate mean of x =
+1668566634.85146
+estimate mean of y =
+NA
+ 
+ 
+all exudates split over different groups
+Coral
+One Sample t-test
+two.sided
+t =
+2.50113619728839
+df =
+2
+pvalue =
+0.129515873212412
+conf.int %
+1988012311.79846
+conf.int =
+1343654759.04228
+estimate mean of x =
+1665833535.42037
+estimate mean of y =
+NA
+ 
+ 
+all exudates split over different groups
+Coral_Dictyota
+One Sample t-test
+two.sided
+t =
+2.84014410431691
+df =
+2
+pvalue =
+0.104835430752546
+conf.int %
+2230961708.11061
+conf.int =
+1626055366.15839
+estimate mean of x =
+1928508537.1345
+estimate mean of y =
+NA
+ 
+ 
+all exudates split over different groups
+Coral_Turf
+One Sample t-test
+two.sided
+t =
+-0.794229726941217
+df =
+2
+pvalue =
+0.510331518613282
+conf.int %
+2644138797.79146
+conf.int =
+1487020835.17207
+estimate mean of x =
+2065579816.48177
+estimate mean of y =
+NA
+ 
+ 
+all exudates split over different groups
+Dictyota
+One Sample t-test
+two.sided
+t =
+-0.93340948105029
+df =
+2
+pvalue =
+0.449146063538691
+conf.int %
+2685558472.58537
+conf.int =
+1362674125.68022
+estimate mean of x =
+2024116299.1328
+estimate mean of y =
+NA
+ 
+ 
+all exudates split over different groups
+Turf
+One Sample t-test
+two.sided
+t =
+-0.143445061452662
+df =
+2
+pvalue =
+0.899086805685673
+conf.int %
+2873396544.30141
+conf.int =
+1657848738.95839
+estimate mean of x =
+2265622641.6299
+estimate mean of y =
+NA
+ 
+ 
+specific exudates per treatment
+Coral
+One Sample t-test
+two.sided
+t =
+-45.3448073415282
+df =
+2
+pvalue =
+0.00048599096269764
+conf.int %
+511488708.09551
+conf.int =
+454319172.911823
+estimate mean of x =
+482903940.503666
+estimate mean of y =
+NA
+ 
+ 
+specific exudates per treatment
+Coral_Dictyota
+One Sample t-test
+two.sided
+t =
+-9.02718375676134
+df =
+2
+pvalue =
+0.0120500778390489
+conf.int %
+944712365.950749
+conf.int =
+768288041.552583
+estimate mean of x =
+856500203.751666
+estimate mean of y =
+NA
+ 
+ 
+specific exudates per treatment
+Coral_Turf
+One Sample t-test
+two.sided
+t =
+-3.48360068028808
+df =
+2
+pvalue =
+0.073440777324322
+conf.int %
+1688004772.03139
+conf.int =
+775597322.04061
+estimate mean of x =
+1231801047.036
+estimate mean of y =
+NA
+ 
+ 
+specific exudates per treatment
+Dictyota
+One Sample t-test
+two.sided
+t =
+-4.74077358238664
+df =
+2
+pvalue =
+0.0417287735710096
+conf.int %
+1519933766.20197
+conf.int =
+798381262.464699
+estimate mean of x =
+1159157514.33333
+estimate mean of y =
+NA
+ 
+ 
+specific exudates per treatment
+Turf
+One Sample t-test
+two.sided
+t =
+-1.80848351072896
+df =
+2
+pvalue =
+0.212257993331237
+conf.int %
+2067384668.83627
+conf.int =
+796356321.563528
+estimate mean of x =
+1431870495.1999
+estimate mean of y =
+NA
+ 
+ 
+all exudates per treatment -specific exudates
+Coral
+One Sample t-test
+two.sided
+t =
+6.72944148402732
+df =
+2
+pvalue =
+0.0213766654722178
+conf.int %
+1495285944.83682
+conf.int =
+870573244.996579
+estimate mean of x =
+1182929594.9167
+estimate mean of y =
+NA
+ 
+ 
+all exudates per treatment -specific exudates
+Coral_Dictyota
+One Sample t-test
+two.sided
+t =
+7.49358666938809
+df =
+2
+pvalue =
+0.0173462142432672
+conf.int %
+1292906290.68467
+conf.int =
+851110376.080997
+estimate mean of x =
+1072008333.38283
+estimate mean of y =
+NA
+ 
+ 
+all exudates per treatment -specific exudates
+Coral_Turf
+One Sample t-test
+two.sided
+t =
+9.21947943247105
+df =
+2
+pvalue =
+0.0115612424477548
+conf.int %
+956315282.843695
+conf.int =
+711242256.04784
+estimate mean of x =
+833778769.445767
+estimate mean of y =
+NA
+ 
+ 
+all exudates per treatment -specific exudates
+Dictyota
+One Sample t-test
+two.sided
+t =
+3.57909138969285
+df =
+2
+pvalue =
+0.0699703473021572
+conf.int %
+1170332973.14561
+conf.int =
+559584596.453324
+estimate mean of x =
+864958784.799467
+estimate mean of y =
+NA
+ 
+ 
+all exudates per treatment -specific exudates
+Turf
+One Sample t-test
+two.sided
+t =
+11.1901174207402
+df =
+2
+pvalue =
+0.00789161671469183
+conf.int %
+928669357.671168
+conf.int =
+738834935.188833
+estimate mean of x =
+833752146.43
+estimate mean of y =
+NA
+ 
+ 
+exudates present in all 'specific exudates' groups 
+Control
+One Sample t-test
+two.sided
+t =
+10.4216656920366
+df =
+2
+pvalue =
+0.0090819233568004
+conf.int %
+105453477.870529
+conf.int =
+56121254.1301376
+estimate mean of x =
+80787366.0003333
+estimate mean of y =
+NA
+ 
+ 
+exudates present in all 'specific exudates' groups 
+Coral
+One Sample t-test
+two.sided
+t =
+-4.66881502160249
+df =
+2
+pvalue =
+0.0429426678327469
+conf.int %
+128685049.03381
+conf.int =
+52945849.1601899
+estimate mean of x =
+90815449.097
+estimate mean of y =
+NA
+ 
+ 
+exudates present in all 'specific exudates' groups 
+Coral_Dictyota
+One Sample t-test
+two.sided
+t =
+-0.719188897788895
+df =
+2
+pvalue =
+0.546704618008461
+conf.int %
+145241267.220748
+conf.int =
+105625974.875252
+estimate mean of x =
+125433621.048
+estimate mean of y =
+NA
+ 
+ 
+exudates present in all 'specific exudates' groups 
+Coral_Turf
+One Sample t-test
+two.sided
+t =
+0.678433859154985
+df =
+2
+pvalue =
+0.567470325661313
+conf.int %
+472207138.087545
+conf.int =
+-108053051.814879
+estimate mean of x =
+182077043.136333
+estimate mean of y =
+NA
+ 
+ 
+exudates present in all 'specific exudates' groups 
+Dictyota
+One Sample t-test
+two.sided
+t =
+-18.0974353343327
+df =
+2
+pvalue =
+0.00303936212834865
+conf.int %
+125126329.055605
+conf.int =
+102380678.373728
+estimate mean of x =
+113753503.714667
+estimate mean of y =
+NA
+ 
+ 
+exudates present in all 'specific exudates' groups 
+Turf
+One Sample t-test
+two.sided
+t =
+-5.31966195667275
+df =
+2
+pvalue =
+0.0335680094411746
+conf.int %
+155513476.443656
+conf.int =
+97796190.6503443
+estimate mean of x =
+126654833.547
+estimate mean of y =
+NA
+ 
+ 
