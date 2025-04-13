@@ -127,3 +127,7 @@ file.edit(paste0(dirR,'/Microbial_size.R'))
 
 # DOC analyis
 file.edit(paste0(dirR, '/DOC_analysis.R'))
+
+
+#run if you come back later and need to activate the packages
+source(paste0(Data.cleanup.scripts, '/packages.R'))

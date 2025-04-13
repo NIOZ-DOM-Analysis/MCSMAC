@@ -138,7 +138,7 @@ for (i in levels(factor(tmp6$category))){
     geom_text(aes(label = Label, y = label.y), position = position_dodge(0.7))+
     guides(color = "none", fill = "none", alpha = "none")
 
-  ggsave(paste0(Sys.Date(), "_barplots_", i,"_features.jpg"), fig.bars, path = dirFigs, width = 5, height = 5)
+  ggsave(paste0(Sys.Date(), "_barplots_", i,"_features.pdf"), fig.bars, path = dirFigs, width = 5, height = 5)
 
   }
 
@@ -166,7 +166,7 @@ ggplot(tmp, aes(
   scale_alpha_manual(values = c(0.45 , 1))+
   geom_text(aes(label = Label, y = 3.05E8), position = position_dodge(0.7))+
   guides(color = "none", fill = "none", alpha = "none")
-ggsave(paste0(Sys.Date(), "_barplots_", i,"_features.jpg"), path = dirFigs, width = 5, height = 5)
+ggsave(paste0(Sys.Date(), "_barplots_", i,"_features.pdf"), path = dirFigs, width = 5, height = 5)
 
 
 
@@ -446,7 +446,7 @@ for (i in levels(factor(tmp17$category))){
 
 
 
-  ggsave(paste0(Sys.Date(), "_barplots_", i,"_features_and_decreasing_part.jpg"), fig.bars, path = dirFigs, width = 5, height = 5)
+  ggsave(paste0(Sys.Date(), "_barplots_", i,"_features_and_decreasing_part.pdf"), fig.bars, path = dirFigs, width = 5, height = 5, dpi = 300)
 
 }
 
@@ -484,15 +484,15 @@ for (i in Treatments){
 mzRT.exudate$Treatment <- factor(mzRT.exudate$Treatment, levels = c("Dictyota", "Coral_Dictyota", "Coral", "Coral_Turf", "Turf"))
 ggplot(mzRT.exudate, aes(`row m/z`, Treatment, fill = Treatment))+
   geom_density_ridges()+
-  scale_fill_manual(values = cost.pal)+
+  scale_fill_manual(values = cust.pal)+
   theme_bw()
-
+ggsave('rowmz_exudate per treatment.pdf', path = dirFigs, dpi = 300, width = 6, height = 5)
 
 ggplot(mzRT.exudate, aes(`row retention time`, Treatment, fill = Treatment))+
   geom_density_ridges()+
-  scale_fill_manual(values = cost.pal)+
+  scale_fill_manual(values = cust.pal)+
   theme_bw()
-
+ggsave('RT_exudate per treatment.pdf', path = dirFigs, dpi = 300, width = 6, height = 5)
 
 rm(mzRT)
 for (i in Treatments){
@@ -525,15 +525,15 @@ for (i in Treatments){
 mzRT$Treatment <- factor(mzRT$Treatment, levels = c("Dictyota", "Coral_Dictyota", "Coral", "Coral_Turf", "Turf"))
 ggplot(mzRT, aes(`row m/z`, Treatment, fill = Treatment))+
   geom_density_ridges()+
-  scale_fill_manual(values = cost.pal)+
+  scale_fill_manual(values = cust.pal)+
   theme_bw()
-
+ggsave('rowmz_unique per treatment.pdf', path = dirFigs, dpi = 300, width = 6, height = 5)
 
 ggplot(mzRT, aes(`row retention time`, Treatment, fill = Treatment))+
   geom_density_ridges()+
-  scale_fill_manual(values = cost.pal)+
+  scale_fill_manual(values = cust.pal)+
   theme_bw()
-
+ggsave('RT_uniaue per treatment.pdf', path = dirFigs, dpi = 300, width = 6, height = 5)
 
 # unique features in other experiments
 tmp<-select(exudates, -count)
@@ -681,6 +681,7 @@ edges <- bind_rows(tmp1, tmp2)
 decreasing_exudates <- decreasing_exudates %>%
   unite(name_SC, c("Treatment", "CF_superclass"), remove = F, sep = ".") %>%
   unite(name_C, c("Treatment", "CF_superclass", "CF_class"), remove = F, sep = ".")
+
 
 
 tmp3 <- decreasing_exudates %>%
@@ -832,7 +833,7 @@ legend.circleplot <- ggraph(mygraph, layout = 'circlepack', weight=size) +
 legend.circleplot<-get_legend(legend.circleplot)
 
 plot(legend.circleplot)
-ggsave("legend_circleplot_decreasing_exudates.jpg", legend.circleplot, path = dirFigs, width = 20, height  = 20, units = c("cm"))
+ggsave("legend_circleplot_decreasing_exudates.pdf", legend.circleplot, path = dirFigs, width = 20, height  = 20, units = c("cm"))
 
 circleplot <- ggraph(mygraph, layout = 'circlepack', weight=size) +
   geom_node_circle(aes(fill = col.code, colour = line.col, group = depth, linewidth = factor(line.with))) +
@@ -843,8 +844,8 @@ circleplot <- ggraph(mygraph, layout = 'circlepack', weight=size) +
   scale_linewidth_manual(values = c(0.4, 1.5))+
   theme(legend.position = "none")
 circleplot
-ggsave("circleplot_decreasing_exudates.jpg", circleplot, path = dirFigs, width = 15, height  = 15, units = c("cm"))
-ggsave("circleplot_decreasing_exudates.eps", circleplot, path = dirFigs, width = 15, height  = 18, units = c("cm"))
+ggsave("circleplot_decreasing_exudates.pdf", circleplot, path = dirFigs, width = 15, height  = 15, units = c("cm"))
+ggsave("circleplot_decreasing_exudates.pdf", circleplot, path = dirFigs, width = 15, height  = 18, units = c("cm"))
 
 
 decreasing.exudates.circle.data<-circle.data
@@ -1082,7 +1083,7 @@ legend.circleplot <- ggraph(mygraph, layout = 'circlepack', weight=size) +
 legend.circleplot<-get_legend(legend.circleplot)
 
 plot(legend.circleplot)
-ggsave("legend_circleplot_decreasing_unique_exudates.jpg", legend.circleplot, path = dirFigs, width = 20, height  = 20, units = c("cm"))
+ggsave("legend_circleplot_decreasing_unique_exudates.pdf", legend.circleplot, path = dirFigs, width = 20, height  = 20, units = c("cm"))
 
 circleplot <- ggraph(mygraph, layout = 'circlepack', weight=size) +
   geom_node_circle(aes(fill = col.code, colour = line.col, group = depth, linewidth = factor(line.with))) +
@@ -1093,8 +1094,8 @@ circleplot <- ggraph(mygraph, layout = 'circlepack', weight=size) +
   scale_linewidth_manual(values = c(0.4, 1.5))+
   theme(legend.position = "none")
 circleplot
-ggsave("circleplot_decreasing_unique_exudates.jpg", circleplot, path = dirFigs, width = 15, height  = 15, units = c("cm"))
-ggsave("circleplot_decreasing_unique_exudates.eps", circleplot, path = dirFigs, width = 15, height  = 18, units = c("cm"))
+ggsave("circleplot_decreasing_unique_exudates.pdf", circleplot, path = dirFigs, width = 15, height  = 15, units = c("cm"))
+ggsave("circleplot_decreasing_unique_exudates.pdf", circleplot, path = dirFigs, width = 15, height  = 18, units = c("cm"))
 
 decreasing.unique.exudates.circle.data<-circle.data
 edges.unique<-edges
@@ -1157,8 +1158,8 @@ legend("center", fill=tmp9.2$col.code, legend=tmp9.2$short.name, cex=0.5)
 
 
 plot(legend.circleplot.relative)
-ggsave("legend_circleplot_decreasing_unique_exudates_relative.jpg", legend.circleplot.relative, path = dirFigs, width = 20, height  = 20, units = c("cm"))
-ggsave("legend_circleplot_decreasing_unique_exudates_relative.eps", legend.circleplot.relative, path = dirFigs, width = 20, height  = 20, units = c("cm"))
+ggsave("legend_circleplot_decreasing_unique_exudates_relative.pdf", legend.circleplot.relative, path = dirFigs, width = 20, height  = 20, units = c("cm"))
+ggsave("legend_circleplot_decreasing_unique_exudates_relative.pdf", legend.circleplot.relative, path = dirFigs, width = 20, height  = 20, units = c("cm"))
 
 
 circleplot.relative <- ggraph(mygraph.new, layout = 'circlepack', weight=size) +
@@ -1171,7 +1172,7 @@ circleplot.relative <- ggraph(mygraph.new, layout = 'circlepack', weight=size) +
   theme(legend.position = "none")
 circleplot.relative
 
-ggsave("circleplot_decreasing_unique_exudates_relative.jpg", circleplot.relative, path = dirFigs, width = 15, height  = 15, units = c("cm"))
-ggsave("circleplot_decreasing_unique_exudates_relative.eps", circleplot.relative, path = dirFigs, width = 18, height  = 18, units = c("cm"))
-ggsave("circleplot_decreasing_unique_exudates_relative.eps", circleplot.relative, path = dirFigs, width = 50, height  = 38, units = c("cm"))
+ggsave("circleplot_decreasing_unique_exudates_relative.pdf", circleplot.relative, path = dirFigs, width = 15, height  = 15, units = c("cm"))
+ggsave("circleplot_decreasing_unique_exudates_relative.pdf", circleplot.relative, path = dirFigs, width = 18, height  = 18, units = c("cm"))
+ggsave("circleplot_decreasing_unique_exudates_relative.pdf", circleplot.relative, path = dirFigs, width = 50, height  = 38, units = c("cm"))
 
