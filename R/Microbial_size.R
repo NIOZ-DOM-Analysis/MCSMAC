@@ -504,3 +504,5 @@ plot5<-cowplot::plot_grid(plot5A, plot_grid(plot5B, plot5C , nrow = 1, labels = 
 
 plot5
 ggsave('Fig5_microbial growth and size.jpg', plot5, path = dirFigs, units = c("cm"), width = 19, height = 20)
+ggsave('Fig5_microbial growth and size.svg', plot5, path = dirFigs, units = c("cm"), width = 19, height = 20)
+ggsave('Fig5_microbial growth and size.pdf', plot5, path = dirFigs, units = c("cm"), width = 19, height = 20)
